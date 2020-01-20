@@ -1,0 +1,32 @@
+
+This is a gold standard test set for evaluating terminology translation in MT. This test set was created from a English--Hindi legal domain data. The gold standard test set (i.e. proceedings of legal judgments) is a part of the IIT Bombay English-Hindi parallel corpus (Kunchukuttan et al., 2017), and contains 1,270 sentence-pairs. 
+
+
+It includes two sentence-aligned text files. English: term-tagged-aligned-1270.en, and Hindi: term-tagged-aligned-1270.hi. Each line of the term-tagged-aligned-1270.* files has three fields separated by "|||", which are:
+
+1. English/Hindi sentences |||
+2. List of legal terms appearing in the sentences (separated by "|"), and terms' lexical and inflectional variations (if any), and term IDs |||
+3. Term ID: start - end positions of each term in sentence  
+
+As an example, we show a pair of English--Hindi (term annotated and aligned) sentences from the gold standard test set below.
+
+ENGLISH:
+acts of negligence , errors of judgment , or innocent mistake , do not constitute such misconduct . ||| trm1:acts of negligence:acts of carelessness|trm2:errors of judgment:errors of adjudication:errors of decision:errors of judgement:errors of pronouncement:errors of verdict|trm3:innocent mistake:guiltless mistake:harmless mistake:sinless mistake:unoffending mistake|trm4:misconduct:abuse:malpractice:misuse| ||| 1:0-2 2:4-6 3:9-10 4:16-16 
+
+HINDI:
+लापरवाही के कृत्य , न्याय की त्रुटियां , अहानिकर ग़लती , इस तरह का कदाचार नहीं होते हैं . ||| trm1:लापरवाही के कृत्य:उपेक्षा के कृत्य|trm2:न्याय की त्रुटियां:अधिनिर्णय की गलतियां:अधिनिर्णय की त्रुटियां:निर्णय की गलतियां:निर्णय की त्रुटियां:निर्णयादेश की गलतियां:निर्णयादेश की त्रुटियां:न्याय की गलतियां:न्यायनिर्णय की गलतियां:न्यायनिर्णय की त्रुटियां:पंचाट की गलतियां:पंचाट की त्रुटियां:फैसला की गलतियां:फैसला की त्रुटियां:राय की गलतियां:राय की त्रुटियां:विचार की गलतियां:विचार की त्रुटियां|trm3:अहानिकर ग़लती:अहानिकर गलती:अहानिकर भूल|trm4:कदाचार:अवचार:दुराचार:अनैतिकता:क़सूर| ||| 1:0-2 2:4-6 3:8-9 4:14-14
+
+Please cite the following paper if you use this data set for your experiments.
+
+
+Rejwanul Haque, Mohammed Hasanuzzaman and Andy Way (2019). Investigating Terminology Translation in Statistical and Neural Machine Translation: A Case Study on English-to-Hindi and Hindi-to-English. In Proceedings of RANLP 2019: Recent Advances in Natural Language Processing, pp. 437--446, Varna, Bulgaria. 
+
+@inproceedings{rej-hasan-way:2019:ranlp
+address = "{Varna, Bulgaria}",
+author = "{Haque, Rejwanul and Hasanuzzaman, Mohammed and Way, Andy}",
+booktitle = "{Proceedings of RANLP 2019: Recent Advances in Natural Language Processing}",
+title = "{Investigating Terminology Translation in Statistical and Neural Machine Translation: A Case Study on English-to-Hindi and Hindi-to-English}",
+year = "{2019}",
+pages = "{437--446}",
+}
+
