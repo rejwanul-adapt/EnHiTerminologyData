@@ -1,5 +1,8 @@
 
-This is a gold standard test set for evaluating terminology translation in MT. This test set was created from a English--Hindi legal domain data. The gold standard test set (i.e. proceedings of legal judgments) is a part of the IIT Bombay English-Hindi parallel corpus (Kunchukuttan et al., 2017), and contains 1,270 sentence-pairs. 
+This is a gold standard test set for evaluating terminology translation in MT.
+This test set was created from a English--Hindi legal domain data (i.e. proceedings of legal judgments). 
+The gold standard test set is a part of the IIT Bombay English-Hindi parallel corpus (Kunchukuttan et al., 2017), 
+and contains 1,270 sentence-pairs. 
 
 
 It includes two sentence-aligned text files. English: term-tagged-aligned-1270.en, and Hindi: term-tagged-aligned-1270.hi. Each line of the term-tagged-aligned-1270.* files has three fields separated by "|||", which are:
